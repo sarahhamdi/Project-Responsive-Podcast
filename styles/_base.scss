@@ -1,0 +1,148 @@
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+// TRANSITIONS ON ALL LINKS
+a:hover,
+button:hover {
+	transition: all 0.5s
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+	
+// BASE WRAPPER STYLES FOR ALL CONTENT
+div.wrapper {
+			max-width: 1170px;
+			margin: 4% auto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin: 10% auto;
+}
+
+
+	
+	section.section3 {
+		background: $color-accent;
+		text-align: center;
+		div.wrapper {
+			max-width: 758px;
+			margin: 5% auto;
+
+		}
+	}
+
+// ADDING EQUAL PADDING AROUND EACH SECTION SO IT DOESNT LOOK CRAP IN MOBILE
+header,
+.section1,
+.section2,
+.section3,
+footer {
+	padding: 15px;
+}
+
+// FLEXING & STYLING ALL THE SOCIAL ICON LISTS
+ul.social,
+ul.footer2__social-list,
+ul.hero__feature__social-list,
+{
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-between;
+}
+
+ul.hero__feature__social-list {
+	width: 75%;
+	align-items: baseline;
+}
+
+// FLEXBOXING THE DIVS IN THE SECTIONS
+section.section1,
+section.section2
+ {
+ 	div.section1__title ,
+	div.section2__title {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		margin: 92px auto 96px auto;
+	}
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		li {
+			margin: 0 10px 40px 10px;
+			width: calc(50% - 20px);
+		}
+	}	
+}
+
+footer {
+	background: $dark-purple;
+	color: $color-primary;
+}
+
+// ALL THE BUTTONS
+button {
+		@include fontSize(14);
+		text-transform: uppercase;
+		color: $color-primary;
+		padding: 22px 32px;
+		background: $color-accent;
+		border-radius: 50px;
+		border: none;
+		font-family: $font-family--buttons;
+		letter-spacing: 2px;
+		font-weight: $font-weight--medium;
+}
+
+button.button-white {
+	background: $color-primary;
+}
+
+// ALL THE RANDOM BARS ABOVE CONTENT
+.upper-bar {
+	background:  rgba(255, 255, 255, 0.2);
+	// width: 469px;
+	border-radius: 10px;
+	height: 12px;
+	margin-bottom: 36px;
+	&.left {
+		margin-left: 20%;
+	}
+}
+
+.section2 .upper-bar {
+	background: lighten($black, 80);
+}
+
+.upper-bar--thin {
+	height: 4px;
+	background:  rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+}
+

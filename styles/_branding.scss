@@ -1,0 +1,31 @@
+$font-url--google	:"https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:600|Roboto:400,700"; 
+$font-family--primary	: "Roboto", sans-serif;
+$font-family--secondary	: "PT Sans", sans-serif;
+$font-family--buttons	: "Poppins", sans-serif;
+
+// Font Weights
+$font-weight--lightest 	: 100;
+$font-weight--light 	: 400;
+$font-weight--medium 	: 600;
+$font-weight--bold 		: 700;
+
+// Descriptive Base Colours
+
+$white			: rgba(253, 253, 253, 1);
+$black			: rgba(26, 23, 26, 1);
+$light-grey		: rgba(26, 23, 26, 0.08);
+// $medium-grey	: rgba(26, 23, 26, 1); // for line after nav //
+$medium-grey2	: rgba(217, 217, 217, 1);
+$dark-grey		: rgba(26, 23, 26, 0.56);
+$neon-green		: rgba(0, 230, 125, 1);
+$dark-purple	: rgba(26, 23, 26, 1);
+$light-purple	: rgba(57, 54, 57, 1);
+
+
+// Color Usage
+
+$color-primary		: $white;
+$color-secondary	: $black;
+$color-accent		: $neon-green;
+$color-shadow		: $light-purple;
+

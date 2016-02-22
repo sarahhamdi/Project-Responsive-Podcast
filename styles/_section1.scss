@@ -1,0 +1,41 @@
+section.section1 {
+	background: $black;
+	
+	div.wrapper {
+		margin: 0 auto;
+	}
+
+	h3 {
+		margin-right: 20px;
+	}
+}
+
+div.section1__title {
+	h2 {
+		width: 60%
+	}
+	p {
+		width: 40%;
+	}
+}
+
+section.section1 ul li {
+	position: relative;
+	div.section1__episode-info {
+		padding: 5%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+div.section1__load-more {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.13);
+	width: 100%;
+	padding: 19px 0;
+	margin: 0 10px 93px 10px;
+	text-align: center;
+	// margin: 0 0 93px 0;
+}

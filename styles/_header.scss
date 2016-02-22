@@ -1,0 +1,89 @@
+header.hero {
+	background: url('../assets/hero.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	padding: 15px 0;
+	// height:100vh;
+
+	div.wrapper {
+		// margin-top: 320px;
+		margin-bottom: 200px;
+		padding: 0 15px;
+	}
+
+	article.hero__feature {
+		max-width: 470px;
+		font-size: 1.8rem;
+	}
+
+	section.hero__music-player {
+		background: #000;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 999;
+		
+		// audio {
+		// 	max-width: 600px;
+		// 	margin: 0 auto;
+		// }
+	}
+
+	button:hover {
+		background: $dark-purple;
+		color: white;
+	}
+}
+
+header nav {
+	border-bottom: 1px solid rgba(217, 217, 217, .1);
+}
+nav {
+	
+	padding-bottom: 20px;
+	div.nav__wrapper {
+		text-align: center;
+		max-width: 530px;
+		margin: 0 auto;
+	}
+	img {
+		margin: 30px auto;
+	}
+	ul {
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.2rem;
+	}
+}
+
+li.donate {
+	border: 2px solid white;
+	padding: 8px 0px;
+	margin-left: 60px;
+	transition: all 0.5s;
+	// flex-grow: .5;
+	// flex-basis: 1;
+	&:hover {
+		background: $dark-purple;
+		border: 2px solid $dark-purple;
+	}
+	a {
+		padding: 8px 9px;
+		&:hover {
+			color: white;
+			// font-weight: $font-weight--medium;
+		}
+	}
+}
+
+div.season__time {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: baseline;
+}

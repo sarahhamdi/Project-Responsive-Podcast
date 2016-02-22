@@ -1,0 +1,384 @@
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+html {
+	font-size: 1;
+}
+
+body {
+	@include fontSize(18);
+	font-family: $font-family--primary;
+	font-weight: $font-weight--light;
+	margin: 0;
+	padding: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+i.fa {
+	@include fontSize(24);
+}
+
+div.season__time p i {
+	@include fontSize(18);
+}
+
+nav,
+nav.footer2__nav,
+nav.mobile {
+	a,
+	a:visited {
+		@include fontSize(12);
+		text-transform: uppercase;
+		color: $color-primary;
+		letter-spacing: 1px;
+		
+	}
+	a:hover {
+			color: $color-accent;
+		}
+}
+
+
+
+header {
+	color: $color-primary;
+	h1,
+	h2 {
+		font-weight: $font-weight--light;
+		font-family: $font-family--secondary;
+		line-height: 3.6rem;
+	}
+	h1 {
+		@include fontSize(30);
+		color: $medium-grey2;
+		margin-bottom: 5rem;
+		span {
+			color: $color-primary;
+		}
+	}
+	h2 {
+		@include fontSize(24);
+		color: $color-primary;
+		padding-bottom: 4rem;
+		margin-bottom: 5rem;
+		border-bottom: 2px solid lighten($light-purple, 20);
+	}
+	a i {
+		color: $color-primary;
+	}
+	li a :hover {
+			color: $color-accent;
+		}
+}
+
+section.section1 {
+	color: $color-primary;
+	h2,
+	h3 {
+		font-family: $font-family--secondary;
+		font-weight: $font-weight--light;
+		text-transform: uppercase;
+		
+		// margin: 92px 0 96px 0;
+	}
+
+	h2 {
+		@include fontSize(21);
+	}
+	h3 {
+		@include fontSize(14);
+		position: relative;
+		a,
+		a:active,
+		a:visited {
+			color: $color-primary;
+		}
+	}
+	div.section1__title h3::after
+	 {
+		content: "";
+		height: 4px;
+		background: $color-accent;
+		position: absolute;
+		bottom: 6px;
+		left: -3px;
+		border-radius: 2px;
+	}
+	div.section1__title h3:first-of-type::after {
+		width: 30px;
+	}
+	div.section1__title h3::after {
+		width: 65px;
+	}	
+	div.section1__load-more {
+		a,
+		a:visited {
+			@include fontSize(14);
+			font-family: $font-family--buttons;
+			color: $medium-grey2;
+			font-weight: $font-weight--light;
+			letter-spacing: 2px;
+		}
+	}
+
+}
+
+section.section1 ul,
+header {
+		color: $color-primary;
+
+	h3 {
+	@include fontSize(32);
+	font-weight: $font-weight--light;
+	font-family: $font-family--secondary;
+	line-height: 3.2rem;
+	text-transform: uppercase;
+	margin: 30px 0;
+	}
+	
+	h4,
+	// p:first-of-type,
+	p:nth-of-type(2),
+	div.season__time p
+	
+	 {
+		color: $color-accent;
+		font-family: $font-family--primary;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	h4,
+	p:first-of-type,
+	p:nth-of-type(2) {
+		@include fontSize(16);
+		text-transform: uppercase;
+		font-weight: $font-weight--bold;
+		letter-spacing: 2px;
+	}
+	p:nth-of-type(2) {
+		margin: 36px 0;
+		font-weight: $font-weight--medium;
+	}
+	p:nth-of-type(3) {
+		@include fontSize(18);
+		font-weight: $font-weight--light;
+		font-family: $font-family--primary;
+		line-height: 28px;
+		
+	}
+}
+
+section.section2 {
+	h2,
+	h3 {
+		font-weight: $font-weight--bold;
+		font-family: $font-family--secondary;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	h2 {
+		@include fontSize(32);
+	}
+	h3 {
+		@include fontSize(48);
+		color: $color-accent;
+	}
+	h4 {
+		font-family: $font-family--primary;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: $font-weight--bold;
+		margin: 40px 0;
+	}
+
+	p {
+		@include fontSize(18);
+		font-weight: $font-weight--light;
+		font-family: $font-family--primary;
+		color:  lighten($black, 50);
+		line-height: 30px;
+		margin-bottom: 44px;
+	}
+	a,
+	a:visited {
+		color: $color-secondary;
+		&:hover {
+			color: $color-accent;
+		}
+	}
+
+}
+
+section.section3 {
+	color: $color-primary;
+	
+	div.wrapper 
+	{
+		position: relative;
+		h2::before {
+			content: 'DONATE';
+			@include fontSize(252);
+			color: rgba(26, 23, 26, .04);
+			text-transform: uppercase;
+			// z-index: 1;
+			position: absolute;
+			top: 35%;
+			left: -15%;
+			font-family: $font-family--secondary;
+			font-weight: $font-weight--light;
+			letter-spacing: 2px;
+		}	
+	}
+	h2 {
+		@include fontSize(36);
+		font-weight: $font-weight--bold;
+		font-family: Roboto;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin-bottom: 56px;
+		z-index: 5;
+	}
+	h3 {
+		text-align: left;
+		@include fontSize(24);
+		font-family: $font-family--primary;
+		font-weight: $font-weight--lightest;
+		line-height: 32px;
+		color: lighten($medium-grey2, 8);
+		margin-bottom: 59px;
+		z-index: 5;
+		em {
+			color: $color-primary;
+			font-weight: $font-weight--medium;
+			letter-spacing: 1px;
+		}
+
+	}
+	a,
+	a:visited {
+		color: $color-secondary;
+	}
+	button:hover {
+		background: $light-purple;
+		a,
+		a:visited {
+			color: $color-primary;
+		}
+	}
+
+}
+
+footer.footer1 {
+	h4 {
+		@include fontSize(18);
+		font-family: $font-family--secondary;
+		text-transform: uppercase;
+		font-weight: $font-weight--light;
+		letter-spacing: 2px;
+		margin: 21px 0 37px 0;
+	}
+
+	ul {
+		li {
+			color: darken($color-primary, 35);
+			@include fontSize(16);
+			font-weight: $font-weight--light;
+			font-family: $font-family--primary;
+			line-height: 36px;
+		}
+	}
+
+// column #2
+	.footer__column:nth-of-type(2) {
+		span {
+			color: darken($color-primary, 60);
+		}
+	}
+
+// column #3
+	.footer__column:nth-of-type(3) {
+		ul li {
+			p:first-child,
+			p:last-child {
+				text-transform: uppercase;
+				font-family: $font-family--secondary;
+				font-weight: $font-weight--light;
+				line-height: 24px;
+			}
+			p:first-child {
+				margin-top: 20px;
+			}
+			p:last-child {
+				@include fontSize(14);
+				color: darken($color-primary, 60);
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+// column #4
+	.footer__column:nth-of-type(4) {
+		ul li {
+			p:first-child,
+			p:last-child {
+				text-transform: uppercase;
+				line-height: 24px;
+
+			}
+			p:first-child {
+				@include fontSize(18);
+				color: $color-accent;
+				font-family: $font-family--secondary;
+				font-weight: $font-weight--bold;
+				letter-spacing: 1px;
+				// margin-top: 20px;
+			}
+			p:last-child {
+				@include fontSize(12);
+				color: darken($color-primary, 60);
+				font-family: $font-family--primary;
+				font-weight: $font-weight--bold;
+				letter-spacing: 1px;
+				// margin-bottom: 20px;
+
+			}
+			a,
+			a:visited {
+				color: $color-primary;
+				:hover {
+					color: $color-accent;
+				}
+			}
+		}
+	}
+}
+
+footer.footer2 {
+	a,
+	a:visited {
+		color: rgba(217, 217, 217, .5);
+		:hover {
+			color: $color-accent;
+		}
+	}
+	.slide-up {
+		text-align: center;
+		p {
+			color: rgba(217, 217, 217, .5);
+			margin-top: 63px;
+			font-family: $font-family--primary;
+			font-weight: $font-weight--light;
+			@include fontSize(14);
+		}
+	}
+	
+}
+

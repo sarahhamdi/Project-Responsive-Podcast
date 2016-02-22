@@ -1,0 +1,37 @@
+section.section2 div.wrapper {
+	margin: 0 auto;
+	ul.section2__item>li:nth-of-type(2),
+	{
+		padding-left: 37px;
+		text-align: right;
+		ul.social {
+			justify-content: flex-end;
+		}
+	}
+	ul.section2__item>li:nth-of-type(3) {
+		padding-right: 86px;
+		ul.social {
+			justify-content: flex-start;
+		}
+	}
+	ul.section2__item>li {
+		margin: 0 10px 140px 10px
+	}
+
+
+}
+
+section.section2 div.upper-bar {
+	max-width: 430px;
+}
+
+ul.section2__item ul.social {
+
+	li:first-of-type {
+		width: 15px;
+	}
+	li:last-of-type {
+		width: 20px;
+	}
+}
+
